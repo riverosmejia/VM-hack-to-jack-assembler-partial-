@@ -61,3 +61,7 @@ No se usan paquetes externos (si requirements.txt aparece, instálalos con pip i
   -- si main soporta salida explícita:
 
   python main.py path/to/input.vm -o path/to/output.jack
+
+# Tester.vm
+
+Hay un archivo dentro del repositorio llamado "Tester.vm", este tiene la estructura del como puedes usar el programa

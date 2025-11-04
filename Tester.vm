@@ -1,0 +1,30 @@
+push constant 10
+push constant 5
+
+lt                  // 10 < 5 ? (Falso: 0)
+
+push constant 1
+push constant 2
+add                 // 1 + 2 = 3
+
+// Control de Flujo (Bucle sencillo)
+push constant 0
+pop local 0         // i = 0
+
+label LOOP_START
+
+push local 0        // push i
+push constant 5
+eq                  // i == 5 ? (resultado -1 o 0)
+if-goto END_LOOP    // Si i=5, saltar.
+
+push local 0        // push i
+push constant 1
+add                 // i = i + 1
+pop local 0
+
+goto LOOP_START     // Volver al bucle
+
+label END_LOOP
+
+push constant 5     // Resultado esperado: 5
