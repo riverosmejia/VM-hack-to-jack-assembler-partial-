@@ -54,10 +54,10 @@ No se usan paquetes externos (si requirements.txt aparece, instálalos con pip i
 
 - Ejecuta el traductor (comando genérico — ajusta si main.py usa flags distintas):
 
-  # Forma común: un archivo VM -> archivo de salida
+  -- Forma común: un archivo VM -> archivo de salida
 
   python main.py path/to/input.vm
 
-  # si main soporta salida explícita:
+  -- si main soporta salida explícita:
 
   python main.py path/to/input.vm -o path/to/output.jack
