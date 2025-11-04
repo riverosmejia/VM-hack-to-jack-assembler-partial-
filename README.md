@@ -48,7 +48,7 @@ No se usan paquetes externos (si requirements.txt aparece, instálalos con pip i
 
   python --version
 
-  # ó
+  ó
 
   python3 --version
 
