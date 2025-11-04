@@ -1,10 +1,10 @@
-## VM-hack-to-jack-assembler (partial)
+# VM-hack-to-jack-assembler (partial)
 
-# Qué es
+## Qué es
 
 Proyecto parcial en Python que convierte código VM (Hack VM) en código objetivo (salida preparada por el codewriter). Es una implementación parcial: parsea instrucciones VM y genera las traducciones básicas que están implementadas en codewriter.py. Ideal como base para completar un traductor VM → Jack/Hack-assembly según el libro/capítulos de Nand2Tetris.
 
-# Qué hace (resumen)
+## Qué hace (resumen)
 
 Lee archivos .vm.
 
@@ -14,11 +14,11 @@ Traduce las instrucciones soportadas a la salida objetivo mediante codewriter.py
 
 main.py orquesta la ejecución (lectura de entrada, llamada al parser y al codewriter, escritura de salida).
 
-# Estado:
+## Estado:
 
 parcial — Traduce los comandos pop, push, add, sub, eq,label, goto, if-goto.
 
-# Estructura del repo:
+## Estructura del repo:
 
 main.py — punto de entrada / CLI.
 
@@ -30,13 +30,13 @@ codewriter.py — generación del código de salida (ensamblador/Jack).
 
 **pycache**/
 
-# Requisitos:
+## Requisitos:
 
 Python 3.8+ (probado con 3.8/3.10).
 
 No se usan paquetes externos (si requirements.txt aparece, instálalos con pip install -r requirements.txt).
 
-# Cómo arrancar (paso a paso)
+## Cómo arrancar (paso a paso)
 
 - Clona el repo:
 
@@ -46,22 +46,30 @@ No se usan paquetes externos (si requirements.txt aparece, instálalos con pip i
 
 - Verifica tu Python:
 
+  ```bash
   python --version
+  ```
 
   ó
 
+  ```bash
   python3 --version
+  ```
 
 - Ejecuta el traductor (comando genérico — ajusta si main.py usa flags distintas):
 
-  -- Forma común: un archivo VM -> archivo de salida
+-- Forma común: un archivo VM -> archivo de salida
 
-  python main.py path/to/input.vm
+    ```bash
+    python main.py path/to/input.vm
+    ```
 
-  -- si main soporta salida explícita:
+-- si main soporta salida explícita:
 
-  python main.py path/to/input.vm -o path/to/output.jack
+    ```bash
+    python main.py path/to/input.vm -o path/to/output.jack
+    ```
 
-# Tester.vm
+## Tester.vm
 
 Hay un archivo dentro del repositorio llamado "Tester.vm", este tiene la estructura del como puedes usar el programa
