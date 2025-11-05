@@ -40,7 +40,9 @@ No se usan paquetes externos (si requirements.txt aparece, instálalos con pip i
 
 - Clona el repo:
 
+  ```bash
   git clone https://github.com/riverosmejia/VM-hack-to-jack-assembler-partial-.git
+  ```
 
   cd VM-hack-to-jack-assembler-partial-
 
